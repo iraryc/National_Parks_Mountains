@@ -8,15 +8,15 @@
     <link rel="stylesheet" type="text/css" href="/CSS/styles.css" />
 </head>
 <style>
-  body{
-    background-image: url(/images/backgroundmountain.jpg);
+    body {
+    background-image: url(/images/parkbackground.png);
     background-size: cover;
   }
 </style>
   <body class="vh-100 overflow-hidden">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
         <div class="container">
-          <a class="navbar-brand fs-4" href="#">National Parks & Mountains </a>
+          <a class="navbar-brand fs-4" href="index.html">National Parks & Mountains </a>
           <!-- Toggle Button -->
           <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,10 +31,10 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="parks.html">Parks</a>
+                  <a class="nav-link" aria-current="page"  href="parks.html">Parks</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="mountains.html">Mountains</a>
@@ -44,34 +44,6 @@
           </div>
         </div>
       </nav>
-
-      <main>
-        <a href="parks.html">
-        <svg viewBox='0 0 100 100'>
-          <path  d='M 25,55 
-                   a 20,20 1 0,0 0,40 
-                   h 50 
-                   a 20,20 1 0,0 0,-40 
-                   a 10,10 1 0,0 -15,-10 
-                   a 15,15 1 0,0 -35,10  
-                   z' />
-                   <text x="34" y="75">Parks</text>
-                   
-        </svg>
-      </a>
-      <a href="mountains.html">
-        <svg viewBox='0 0 100 200'>
-          <path   d='M 29,55 
-                   a 20,20 1 0,0 0,40 
-                   h 50 
-                   a 20,20 1 0,0 0,-40 
-                   a 10,10 1 0,0 -15,-10 
-                   a 15,15 1 0,0 -35,10  
-                   z' />
-                   <text x="27" y="76">Mountains</text>
-        </svg>
-      </a>
-      </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/JavaScript/script.js"></script>
 </body>
