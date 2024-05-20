@@ -7,6 +7,7 @@
    
 }
 
+
 /* nav bar begins */
 
 .navbar-nav .nav-link {
@@ -26,7 +27,7 @@
 }
 
 
-/* this is for the button */
+/* this is for the navbar button */
 .btn {
   font-weight: 500;
   font-size: 14px;
@@ -44,6 +45,134 @@
   background-color: #E0E9F2 ;
   color: #192A34;
 }
+/* navbar button ends */
+/* navbar ends */
 
+/* hero begins */
+#hero{
+  background: linear-gradient(rgba(9, 81, 109, 0.5), #9615105b), url(/images/nationparkimage.jpg);
+  background-size: cover;
+}
 
+/* squiggle begins */
+.custom-shape-divider-bottom-1716225251 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716225251 svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-bottom-1716225251 .shape-fill {
+  fill: #ffffff;
+}
+/* squiggle ends */
+
+/* about sections begins */
+.myaboutimages{
+  width: 100%;
+}
+.nationalpark{
+  position: relative;
+  overflow: hidden;
+}
+
+.nationalpark .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(6, 55, 75, 0.5) ;
+  padding: 30px;
+  display: flex;
+  align-items: flex-end;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.nationalpark img{
+  transition: all 0.4s ease;
+}
+
+.nationalpark:hover .overlay{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nationalpark:hover img{
+  transform: scale(1.1);
+}
+/* about section ends */
+
+/* contact us begins */
+#contactus{
+  background: linear-gradient(to right, rgba(146, 214, 224, 0.267), rgba(133, 211, 235, 0.205)), url(/images/yosemitenationalparkpixbay.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#contactus form{
+  background-color: #496571;
+  padding: 32px;
+}
+
+#contactus form .form-control {
+  background-color: #496571;
+  border-radius: 10px;
+  margin-top: 16px;
+  border-color: #81A3BC;
+  border-width: 2px;
+
+}
+
+#contactus form input {
+  height: 58px;
+
+}
+
+#contactus form .form-control:focus{
+  box-shadow:none;
+  border-color: #192A34;
+}
+.custom-shape-divider-top-1716237112 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1716237112 svg {
+  position: relative;
+  display: block;
+  width: calc(164% + 1.3px);
+  height: 172px;
+}
+
+.custom-shape-divider-top-1716237112 .shape-fill {
+  fill: #FFFFFF;
+}
+/* contact us ends */
   
+/* footer begins */
+footer{
+  padding-top:5px;
+}
+
+.footer-bottom{
+  padding-top: 10px ;
+  border-top: 1px solid #192A34;
+}
+/* footer ends */
+
