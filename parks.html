@@ -79,7 +79,14 @@
               mollitia quia. Dolorem libero, nemo consectetur molestiae deserunt cum?
             </p>
             <div>
-              <a href="parks.html" class="btn btn-dark mt-2">Visit National Parks</a>
+              <h5>Search by: </h5>
+              <input type="radio" id="locationofPark" name="parks" value="locationofPark">
+              <label for="locationofPark">Location</label>
+              <input type="radio" id="typeofPark" name="parks" value="typeofPark">
+              <label for="typeofPark">Type</label><br>
+            </div>
+            <div>
+              <select id="parksDropdown"></select>
             </div>
           </div>
         </div>
@@ -178,5 +185,8 @@
 <!-- footer ends here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="/JavaScript/script.js"></script>
+    <script src="/JavaScript/locationData.js"></script>
+    <script src="/JavaScript/parkTypeData.js"></script>
+
 </body>
 </html>
