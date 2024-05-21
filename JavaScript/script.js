@@ -20,6 +20,7 @@ function dropdown(optionsArray, defaultText){
    })
 };
 
+
 function setupDropDown(){
 
     const dropdownSection = document.getElementById("dropdownSection");
@@ -34,14 +35,6 @@ function setupDropDown(){
         dropdownSection.style.display = "block";
 
     });
-
-    document.getElementById("parksDropdown").addEventListener('change', function(){
-        
-    })
-
 };
-
-
-
 
 document.addEventListener('DOMContentLoaded', setupDropDown);
