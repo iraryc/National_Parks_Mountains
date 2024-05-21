@@ -34,6 +34,14 @@ function setupDropDown(){
         dropdownSection.style.display = "block";
 
     });
+
+    document.getElementById("parksDropdown").addEventListener('change', function(){
+        
+    })
+
 };
+
+
+
 
 document.addEventListener('DOMContentLoaded', setupDropDown);
