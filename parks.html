@@ -78,59 +78,18 @@
             <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi officiis commodi delectus non odio? Molestiae fuga, temporibus quod quis dolore reiciendis 
               mollitia quia. Dolorem libero, nemo consectetur molestiae deserunt cum?
             </p>
-            <div>
-              <h5>Search by: </h5>
-              <input type="radio" id="locationofPark" name="parks" value="locationofPark">
-              <label for="locationofPark">Location</label>
-              <input type="radio" id="typeofPark" name="parks" value="typeofPark">
-              <label for="typeofPark">Type</label><br>
+            <h5>Search by: </h5>
+            <div class="form-check form-check-inline">
+              
+              <input class="form-check-input" type="radio" id="locationofPark" name="parks" value="locationofPark">
+              <label class="form-check-label" for="locationofPark">Location</label>
             </div>
-            <div>
-              <select id="parksDropdown"></select>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="typeofPark" name="parks" value="typeofPark">
+              <label class="form-check-label" for="typeofPark">Type</label><br>
             </div>
-          </div>
-        </div>
-        <div class="row g-2">
-          <div class="col-lg-4 col-sm-6">
-            
-            <div class="nationalpark">
-              <img class="myaboutimages" src="/images/grandcanyonpixbay.jpg" alt="adamsstory">
-              <div class="overlay">
-                <div>
-                  <h4 class="text-white">Park Title</h4>
-                <h6 class="text-white">Park State</h6>
-                <div>
-                  <a href="parks.html" class="btn btn-dark mt-2">View More</a>
-                </div>
-                </div>
-              </div>
-          </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="nationalpark">
-              <img class="myaboutimages" src="/images/grandcanyonpixbay.jpg" alt="adamsstory">
-              <div class="overlay">
-                <div>
-                  <h4 class="text-white">Park Title</h4>
-                <h6 class="text-white">Park State</h6>
-                <div>
-                  <a href="parks.html" class="btn btn-dark mt-2">View More</a>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div><div class="col-lg-4 col-sm-6">
-            <div class="nationalpark">
-              <img class="myaboutimages" src="/images/grandcanyonpixbay.jpg" alt="adamsstory">
-              <div class="overlay">
-                <div>
-                  <h4 class="text-white">Park Title</h4>
-                <h6 class="text-white">Park State</h6>
-                <div>
-                  <a href="parks.html" class="btn btn-dark mt-2">View More</a>
-                </div>
-                </div>
-              </div>
+            <div id="dropdownSection" style="display: none;">
+              <select  id="parksDropdown"><option value="" disabled selected>Select an option</option></select>
             </div>
           </div>
         </div>
