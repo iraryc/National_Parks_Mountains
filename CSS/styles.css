@@ -54,6 +54,11 @@
   background-size: cover;
 }
 
+#hero1{
+  background: linear-gradient(rgba(9, 81, 109, 0.5), #9615105b), url(/images/nationalparkspixbay.jpg);
+  background-size: cover;
+}
+
 /* squiggle begins */
 .custom-shape-divider-bottom-1716225251 {
   position: absolute;
@@ -176,3 +181,26 @@ footer{
 }
 /* footer ends */
 
+/* parks and mountains svg starts */
+.custom-shape-divider-bottom-1716304325 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716304325 svg {
+  position: relative;
+  display: block;
+  width: calc(189% + 1.3px);
+  height: 109px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1716304325 .shape-fill {
+  fill: #FFFFFF;
+}
+/* parks and mountains svg starts */
