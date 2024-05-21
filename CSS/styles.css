@@ -59,6 +59,11 @@
   background-size: cover;
 
 }
+#hero2{
+  background: linear-gradient(rgba(9, 81, 109, 0.5), #6159595b), url(/images/mountainspixbay.jpg);
+  background-size: cover;
+
+}
 
 /* squiggle begins */
 .custom-shape-divider-bottom-1716225251 {
@@ -202,6 +207,27 @@ footer{
 }
 
 .custom-shape-divider-bottom-1716304325 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.custom-shape-divider-bottom-1716329097 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716329097 svg {
+  position: relative;
+  display: block;
+  width: calc(172% + 1.3px);
+  height: 110px;
+}
+
+.custom-shape-divider-bottom-1716329097 .shape-fill {
   fill: #FFFFFF;
 }
 /* parks and mountains svg starts */
