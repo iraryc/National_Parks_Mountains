@@ -1,6 +1,5 @@
 "use strict"
 
-
 function dropdown(optionsArray, defaultText){
     const dropdown = document.getElementById("parksDropdown");
    dropdown.innerHTML="";
@@ -36,15 +35,57 @@ function setupDropDown(){
 
     });
 
-    document.getElementById("parksDropdown").addEventListener('change', function(){
-        const parksDropdown  = nationalParksArray.find(parks => parks.State === this.value);
-});
+    document.getElementById("parksDropdown").addEventListener('change', displayParks)
+};
+
+function displayParks(){
+    const selectedValue = document.getElementById("parksDropdown").value;
+    const filteredParks = nationalParksArray.filter(park => park.State === selectedValue);
+
+    const displayCard = document.getElementById("displayParks");
+    displayCard.innerHTML = "";
+
+    filteredParks.forEach(park => {
+        const card = 
+        // `<div class="card-body">
+        //     <h5 class="card-title" id="cardTitle">${park.LocationName}</h5>
+        //     <p class="card-text" id="cardAddress">${park.Address} ${park.City} ${park.State} ${park.ZipCode}</p>
+        //     <p class="card-text" id="cardContact">${park.Phone} <br></br> ${park.Fax}</p>
+        //     <p class="card-text" id="cardLat&Long">${park.Latitude} and ${park.Longitude}</p>
+        //     <p class="card-text" id="cardWebsite">${park.Visit}</p>
+        //   </div>`
+
+          `<table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Location Name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Contact</th>
+              <th scope="col">URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">${park.LocationID}</th>
+              <td>${park.LocationName}</td>
+              <td>${park.Address} ${park.City} ${park.State} ${park.ZipCode}</td>
+              <td>${park.Phone} <br></br> ${park.Fax}</td>
+              <td>${park.Visit}</td>
+            </tr>
+          </tbody>
+        </table>`
+
+          displayCard.innerHTML += card; 
+    });
+       
+   
+        
+        
+    //user innerHTML +- park
+
+
 }
 
-function displayParksByState(){
-    document.getElementById(displayParks).innerHTML = displayParks.value;
-
-    
-
-}
 document.addEventListener('DOMContentLoaded', setupDropDown);
+
