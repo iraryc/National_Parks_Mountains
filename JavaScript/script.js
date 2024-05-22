@@ -41,10 +41,11 @@ function setupDropDown(){
 function displayParks(){
     const selectedValue = document.getElementById("parksDropdown").value;
     const filteredParks = nationalParksArray.filter(park => park.State === selectedValue);
-
+    // const filterHistoricTypePark = parkTypesArray.filter(parkType => parkType.LocationName.includes("Historic"));
+    
     const displayCard = document.getElementById("displayParks");
     displayCard.innerHTML = "";
-
+    
     filteredParks.forEach(park => {
         const card = 
         // `<div class="card-body">
@@ -55,31 +56,65 @@ function displayParks(){
         //     <p class="card-text" id="cardWebsite">${park.Visit}</p>
         //   </div>`
 
-          `<table class="table">
-          <thead>
-            <tr>
-              <th scope="col">ID</th>
-              <th scope="col">Location Name</th>
-              <th scope="col">Address</th>
-              <th scope="col">Contact</th>
-              <th scope="col">URL</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">${park.LocationID}</th>
-              <td>${park.LocationName}</td>
-              <td>${park.Address} ${park.City} ${park.State} ${park.ZipCode}</td>
-              <td>${park.Phone} <br></br> ${park.Fax}</td>
-              <td>${park.Visit}</td>
-            </tr>
-          </tbody>
-        </table>`
+        //   `<table class="table">
+        //   <thead>
+        //     <tr>
+        //       <th scope="col">ID</th>
+        //       <th scope="col">Location Name</th>
+        //       <th scope="col">Address</th>
+        //       <th scope="col">Contact</th>
+        //       <th scope="col">URL</th>
+        //     </tr>
+        //   </thead>
+        //   <tbody>
+        //     <tr>
+        //       <th scope="row">${park.LocationID}</th>
+        //       <td>${park.LocationName}</td>
+        //       <td>${park.Address} ${park.City} ${park.State} ${park.ZipCode}</td>
+        //       <td>${park.Phone} <br></br> ${park.Fax}</td>
+        //       <td>${park.Visit}</td>
+        //     </tr>
+        //   </tbody>
+        // </table>`
+
+        `<div class="col-lg-4 col-sm-6">
+        <div class="nationalpark">
+          <img class="myaboutimages" src="/images/grandcanyonpixbay.jpg" alt="adamsstory">
+          <div class="overlay">
+            <div>
+              <h4 class="text-white">${park.LocationID}</h4>
+              <h4 class="text-white">${park.LocationName}</h4>
+              <p class="text-white">${park.Address} ${park.City} ${park.State} ${park.ZipCode}</p>
+              <p class="text-white">${park.Phone} | ${park.Fax}</p>
+              <p class="text-white">${park.Visit}</p>
+            </div>
+          </div>
+        </div>
+      </div>`
 
           displayCard.innerHTML += card; 
     });
        
-   
+    // filterHistoricTypePark.forEach(parkType => {
+    //     const historiccard = 
+    //     `<div class="col-lg-4 col-sm-6">
+    //     <div class="nationalpark">
+    //       <img class="myaboutimages" src="/images/grandcanyonpixbay.jpg" alt="adamsstory">
+    //       <div class="overlay">
+    //         <div>
+    //           <h4 class="text-white">${park.LocationID}</h4>
+    //           <h4 class="text-white">${park.LocationName}</h4>
+    //           <p class="text-white">${park.Address} ${park.City} ${park.State} ${park.ZipCode}</p>
+    //           <p class="text-white">${park.Phone} | ${park.Fax}</p>
+    //           <p class="text-white">${park.Visit}</p>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   </div>`
+    //   displayCard.innerHTML += historiccard; 
+
+
+    // })
         
         
     //user innerHTML +- park
