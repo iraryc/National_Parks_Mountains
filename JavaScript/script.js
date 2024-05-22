@@ -35,6 +35,16 @@ function setupDropDown(){
         dropdownSection.style.display = "block";
 
     });
-};
 
+    document.getElementById("parksDropdown").addEventListener('change', function(){
+        const parksDropdown  = nationalParksArray.find(parks => parks.State === this.value);
+});
+}
+
+function displayParksByState(){
+    document.getElementById(displayParks).innerHTML = displayParks.value;
+
+    
+
+}
 document.addEventListener('DOMContentLoaded', setupDropDown);

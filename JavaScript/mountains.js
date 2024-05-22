@@ -23,15 +23,18 @@ function mountaindropdown(optionsMounArray, defaultText){
    })
 };
 
+
 function setupMountainDropDown(){
 
     const mountainDropDownSection = document.getElementById("mountainDropDownSection");
     mountainDropDownSection.style.display = 'block';
+    
 
     mountaindropdown(mountainsArray, "Select Mountain Information");
 
     document.getElementById("mountainsDropdown").addEventListener('change', function(){
         const selectedMountain  = mountainsArray.find(mountain => mountain.name === this.value);
+        
         
         if (selectedMountain) {
             document.getElementById("displayParks").style.display = 'block';
