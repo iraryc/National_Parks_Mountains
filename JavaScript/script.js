@@ -54,17 +54,19 @@ function displayParks() {
 
     filteredParks.forEach(park => {
         const card = `
-            <div class="col-lg-4 col-sm-6">
-                <div class="nationalpark">
-                    <img class="myaboutimages" src="/images/grandcanyonpixbay.jpg" alt="Park Image">
+            <div class="col-lg-6 col-sm-6">
+                <div class="nationalParkPage">
+                    <img class="myNationalParkPageImages" src="images/mountainparklayout.png" alt="Park Image">
+                    <div class="initialTitle">
+                        <h5>${park.LocationName}</h5>
+                    </div>
                     <div class="overlay">
-                        <div>
-                            <h4 class="text-white">${park.LocationID}</h4>
-                            <h4 class="text-white">${park.LocationName}</h4>
-                            <p class="text-white">${park.Address}, ${park.City}, ${park.State}, ${park.ZipCode}</p>
-                            <p class="text-white">${park.Phone} | ${park.Fax}</p>
-                            <p class="text-white"><a href="${park.Visit}" target="_blank" class="text-white">Visit Website</a></p>
-                        </div>
+                        <div class="parkCardText">
+                        <h4 class="text-white">${park.LocationID}</h4>
+                        <p class="text-white">${park.Address}, ${park.City}, ${park.State}, ${park.ZipCode}</p>
+                        <p class="text-white">${park.Phone} | ${park.Fax}</p>
+                        <p class="text-white"><a href="${park.Visit}" target="_blank" class="text-white">Visit Website</a></p>
+                    </div>
                     </div>
                 </div>
             </div>`;
