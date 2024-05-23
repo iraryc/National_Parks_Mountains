@@ -39,16 +39,21 @@ function setupMountainDropDown() {
       );
 
       if (selectedMountain) {
-        const mountainCard = document.getElementById("displayParks");
+        const mountainCard = document.getElementById("displayMountain");
         mountainCard.innerHTML = 
-        `<div class="card mb-3 cardmountain" id="displayParks">
-            <img src="${selectedMountain.img}" class="card-img-top mountainimage justify-content-center" alt="" id="parkImageDisplay">
+        `<div class="card mb-3 cardmountain ">
+            <img src="${selectedMountain.img}" class="card-img-top mountainimage" alt="" id="parkImageDisplay">
             <div class="card-body">
             <h5 class="card-title" id="cardTitle">${selectedMountain.name}</h5>
+            <h6 class="card-text" id="cardAddress">Elevation:</h6>
             <p class="card-text" id="cardAddress">${selectedMountain.elevation}</p>
+            <h6 class="card-text" id="cardAddress">Effort Level:</h6>
             <p class="card-text" id="cardContact">${selectedMountain.effort}</p>
+            <h6 class="card-text" id="cardAddress">Learn More:</h6>
             <p class="card-text" id="cardLat&Long">${selectedMountain.desc}</p>
-            <p class="card-text" id="cardWebsite">${selectedMountain.elevation}</p>
+            </div>
+            <a herf="" class="btn btn-brand ms-lg-3 justify-content-end mountainBookButton">Book a Visit</a>
+          </div>
             </div>
         </div>`;
         // document.getElementById("displayParks").style.display = 'block';
