@@ -42,9 +42,10 @@ function setupMountainDropDown() {
         const mountainCard = document.getElementById("displayMountain");
         mountainCard.innerHTML = 
         `<div class="card mb-3 cardmountain ">
+            <h3 class="card-title" id="cardTitle">${selectedMountain.name}</h3>
             <img src="${selectedMountain.img}" class="card-img-top mountainimage" alt="" id="parkImageDisplay">
             <div class="card-body">
-            <h5 class="card-title" id="cardTitle">${selectedMountain.name}</h5>
+            
             <h6 class="card-text" id="cardAddress">Elevation:</h6>
             <p class="card-text" id="cardAddress">${selectedMountain.elevation}</p>
             <h6 class="card-text" id="cardAddress">Effort Level:</h6>

@@ -75,20 +75,19 @@
         <div class="row mb-5">
           <div class="col-md-8 mx-auto text-center">
             <h1 class="mt-5 text-uppercase"> Search for National Parks</h1>
-            <p class="mt-5">Start your adventure by exploring the diverse landscapes and unique history that await you!
+            <p class="mt-3 mb-4">Start your adventure by exploring the diverse landscapes and unique history that await you!
             </p>
             <h5>Search by: </h5>
-            <div class="form-check form-check-inline">
-              
-              <input class="form-check-input" type="radio" id="locationofPark" name="parks" value="locationofPark">
-              <label class="form-check-label" for="locationofPark">Location</label>
+            <div class="form-check form-check-inline radioButtonNP">
+              <input class="btn-check " type="radio" id="locationofPark" name="parks" value="locationofPark" autocomplete="off">
+              <label class="btn btn-primary locationbutton" for="locationofPark">Location</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="typeofPark" name="parks" value="typeofPark">
-              <label class="form-check-label" for="typeofPark">Type</label><br>
+              <input class="btn-check" type="radio" id="typeofPark" name="parks" value="typeofPark" autocomplete="off">
+              <label class="btn btn-primary locationbutton" for="typeofPark">Type</label><br>
             </div>
-            <div id="dropdownSection" style="display: none;">
-              <select  id="parksDropdown"><option value="" disabled selected>Select an option</option></select>
+            <div id="dropdownSection" class="my-3 " style="display: none;">
+              <select class="form-select form-select-lg mb-4 dropDownNationalPark" id="parksDropdown"><option value="" disabled selected>Select an option</option></select>
             </div>
             <div class="row g-2" id="displayParks">
               

@@ -142,13 +142,13 @@
 .nationalParkPage{
   position: relative;
   overflow: hidden;
-  border: 2px solid #192A34;
+  border: 2px solid #496571;
   border-radius: 15px;
 }
 
 .initialTitle{
   position:absolute;
-  top: 90%;
+  top: 85%;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%); /* Adjust position to be centered */
@@ -191,7 +191,68 @@
 
 /* national park page sections begins */
 
+/* national park radio buttons begin */
+.locationbutton {
+  width: 100px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #192A34;
+ }
+ 
+ .locationbutton:hover {
+   width: 100px;
+   text-align: center;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   background-color:#496571!important;
+   color:#E0E9F2;
+  }
+ 
+  .btn-check:checked + .locationbutton {
+   background-color: #496571 !important;
+   color: #E0E9F2;
+ }
 
+ .radioButtonNP{
+  margin-top: 25px;
+  margin-bottom: 20px;
+ }
+ 
+ /* national park radio buttons begin */
+
+ /* national park dropdown menu begin */
+ .dropDownNationalPark {
+  border: 2px solid #192A34; 
+  border-radius: 15px; 
+  padding: 10px;
+  transition: border-color 0.3s ease; 
+
+ }
+ .dropDownNationalPark:focus {
+border-color: 496571 ;
+border-width: 3px;
+outline: none;
+box-shadow: 0 0 5px 2px #496571;;
+ }
+
+ .dropDownNationalPark:focus:invalid {
+  border-color: #496571; /* Pink border for invalid option */
+}
+
+ .dropDownNationalPark:hover {
+  border-color: #496571; 
+  border-width: 3px;
+ }
+
+ .form-select:focus {
+  border-color: #496571 !important; 
+  box-shadow: 0 0 5px 2px #496571 !important; 
+}
+
+ /* national park dropdown menu begin */
 
 
 /* contact us begins */
@@ -326,6 +387,7 @@ footer{
   justify-content: center;
   align-items: center;
   border-width: 2px;
+  border-radius: 15px;
 }
 
 
@@ -334,10 +396,16 @@ footer{
   width: 400px;
   background-image: cover;
   margin-top: 10px;
+  border-radius: 30px;
 
 }
 
 .mountainBookButton{
   margin-bottom: 15px;
 }
+
+.card-title{
+  margin-top: 10px;
+}
 /* mountain end */
+
