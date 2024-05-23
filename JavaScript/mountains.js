@@ -45,13 +45,15 @@ function setupMountainDropDown() {
             <h3 class="card-title" id="cardTitle">${selectedMountain.name}</h3>
             <img src="${selectedMountain.img}" class="card-img-top mountainimage" alt="" id="parkImageDisplay">
             <div class="card-body">
-            
-            <h6 class="card-text" id="cardAddress">Elevation:</h6>
-            <p class="card-text" id="cardAddress">${selectedMountain.elevation}</p>
-            <h6 class="card-text" id="cardAddress">Effort Level:</h6>
-            <p class="card-text" id="cardContact">${selectedMountain.effort}</p>
-            <h6 class="card-text" id="cardAddress">Learn More:</h6>
+            <h5 class="card-text" id="cardAddress">Description:</h5>
             <p class="card-text" id="cardLat&Long">${selectedMountain.desc}</p>
+            <div>
+            <h6 class="card-text elevationAndEffort1" id="cardAddress">Elevation:</h6>
+            <p class="card-text elevationAndEffort" id="cardAddress">${selectedMountain.elevation}</p>
+            <h6 class="card-text elevationAndEffort" id="cardAddress">Effort Level:</h6>
+            <p class="card-text elevationAndEffort1" id="cardContact">${selectedMountain.effort}</p>
+            </div>
+            
             </div>
             <a herf="" class="btn btn-brand ms-lg-3 justify-content-end mountainBookButton">Book a Visit</a>
           </div>

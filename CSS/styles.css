@@ -22,7 +22,8 @@ body{
 }
 
 .navbar-nav .nav-link.active {
-  color: #192A34;
+  color: #1B2C17;
+  font-weight: bolder;
 }
 
 .navbar-nav .nav-link:hover {
@@ -135,6 +136,11 @@ body{
 .nationalpark:hover img{
   transform: scale(1.1);
 }
+
+.visitNationalParkButton:hover {
+background-color: #496571;
+border-color: #496571;
+}
 /* about section ends */
 
 
@@ -202,7 +208,7 @@ body{
 
 /* national park radio buttons begin */
 .locationbutton {
-  width: 100px;
+  width: 200px;
   text-align: center;
   display: inline-flex;
   justify-content: center;
@@ -211,7 +217,7 @@ body{
  }
  
  .locationbutton:hover {
-   width: 100px;
+   width: 200px;
    text-align: center;
    display: inline-flex;
    justify-content: center;
@@ -407,6 +413,7 @@ footer{
   background-image: cover;
   margin-top: 10px;
   border-radius: 30px;
+  margin-bottom: 15px;
 
 }
 
@@ -416,6 +423,17 @@ footer{
 
 .card-title{
   margin-top: 10px;
+}
+
+.elevationAndEffort{
+  display: inline !important ;
+}
+
+.elevationAndEffort1{
+  display: inline !important ;
+  
+  margin-right:20px;
+
 }
 /* mountain end */
 
