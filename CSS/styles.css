@@ -2,9 +2,27 @@
 
 @media(max-width: 900px) {
     .offcanvas{
-        background-image: linear-gradient(to bottom right, #5DE0E6, #0078A6);
+        background-image: linear-gradient(to bottom right, #496571, #1B2C17);
     }
-   
+   /* this is for the navbar button */
+.btn {
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 2;
+  padding: 10px 24px;
+}
+
+.btn-brand {
+  background-color: #192A34;
+  color: #E0E9F2;
+}
+
+.btn-brand:hover {
+  background-color: #E0E9F2 ;
+  color: #192A34;
+}
+/* navbar button ends */
 }
 
 body{
@@ -387,6 +405,7 @@ footer{
   margin-bottom: 30px;
   border-width: 3px;
   margin-top: 15px;
+  border-color:#192A34 ;
   
 }
 
@@ -398,13 +417,13 @@ footer{
 
 /* mountain card */
 .cardmountain{
-  border-color:#81A3BC;
+  border-color:#192A34;
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: 2px;
   border-radius: 15px;
-  background-color: #81a3bc;
+  background-color: #192A34;
   }
 
 
@@ -423,7 +442,17 @@ footer{
 .mountainBookButton{
   margin-bottom: 15px;
   width: 400px;
+  background-color: #E0E9F2;
+  color: #192A34;
 }
+
+.mountainBookButton:hover{
+  margin-bottom: 15px;
+  width: 400px;
+  background-color: #496571;
+  color: #E0E9F2;
+}
+
 
 .card-title{
   margin-top: 10px;
@@ -446,7 +475,31 @@ footer{
 
 
 /* mountain end */
-.img-fluid{
+.visitimage{
+  background-image: url(/images/nationparkimage.jpg);
   background-size: cover;
-  height: cover;
+}
+
+.visitfooter{
+  background-color: #192A34;
+}
+
+.visitcard{
+  background-color: #192A34;
+}
+
+.submitbut{
+  background-color: #E0E9F2;
+  color: #192A34 !important;
+  width: 200px;
+  border-color: #192A34;
+}
+
+.submitbut:hover{
+background-color: #81A3BC;
+color: #192A34 !important;
+border-color: #81A3BC;
+}
+.radioButtonColor:checked{
+  background-color:  #81A3BC !important;
 }

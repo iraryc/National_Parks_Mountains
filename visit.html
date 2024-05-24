@@ -14,7 +14,7 @@
     
     </head>
 
-    <body>
+    <body class="visitimage">
         <!-- navbar begins -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
         <div class="container">
@@ -33,7 +33,7 @@
             <div class="offcanvas-body ">
               <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="parks.html">National Parks</a>
@@ -45,7 +45,7 @@
                
             </div>
         </div>
-          <a herf="bookvisit.html" class="btn btn-brand ms-lg-3 justify-content-end">Book a Visit</a>
+          <a href="visit.html" class="btn btn-brand ms-lg-3 justify-content-end d-none d-lg-block">Book a Visit</a>
         </div>
       </nav>
       
@@ -53,68 +53,82 @@
        <!-- Body Begins -->
         <main>
           <form>
-          <div class="col-12" id="login1">
-            <div class="card">
-              <div class="row g-0">
-                <div class="col-md-6 col-lg-5 d-none d-md-block">
-                  <img src="images/bookavisitimage.jpg" alt="login form" class="img-fluid">
-                </div>
-                <div class="col-md-6 col-lg-7 d-flex align-items-center">
-                  <div class="card-body p-4 p-lg-5 text-black" style="background-color: #81a3bc;">
-  
-                    
-  
-                      <div class="d-flex align-items-center mb-3 pb-1">
-                        <i class="fas fa-cubes fa-2x"></i>
-                        <span class="h1 fw-bold mb-0" style="color: #192A34;">BOOK A VISIT</span>
-                        </div>
-  
-                      <h6 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Plan your unforgettable adventure with ease. Contact us today to book your visit and 
-                        experience the natural wonders up close!</h6>
-  
-                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
-                        <input type="email" id="form2Example17" class="form-control form-control-lg">
-                        <label class="form-label" for="form2Example17" style="margin-left: 0px;">Full Name</label>
-                      <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 88.8px;"></div><div class="form-notch-trailing"></div></div></div>
-  
-                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
-                        <input type="password" id="form2Example27" class="form-control form-control-lg">
-                        <label class="form-label" for="form2Example27" style="margin-left: 0px;">Email Address</label>
-                      <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
-  
-                      <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
-                        <input type="password" id="form2Example27" class="form-control form-control-lg">
-                        <label class="form-label" for="form2Example27" style="margin-left: 0px;">DD/MM/YYYY</label>
-                      <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
-  
-                      <div class="form-group col-12">
-                        <textarea name="" class="form-control text-white" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="pt-5 mt-5 pb-5 mb-5" id="signup">
+             
+             <div class="row d-flex justify-content-center align-items-center h-100">
+               <div class="col-6 col-md-9 col-lg-7 col-xl-7">
+                 <div class="card visitcard" style="border-radius: 16px;">
+                   <div class="test mt-5">
+     
+                  
+                   <div class="card-body" id="signup2">
+                     <h2 class="text-uppercase text-center fw-semibold mb-3" style="color:#E0E9F2">Book a Visit</h2>
+                     <h6 class="text text-center mb-5" style="color:#E0E9F2"> Contact us today to book your 
+                      visit and experience the natural wonders up close!</h6>
+     
+                  
+     
+                       <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                         <input type="text" id="form3Example1cg" class="form-control form-control-lg">
+                         <label class="form-label text-white" for="form3Example1cg" style="margin-left: 0px;">Full Name</label>
+                       <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 71.2px;"></div><div class="form-notch-trailing"></div></div></div>
+     
+                       <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                         <input type="email" id="form3Example3cg" class="form-control form-control-lg">
+                         <label class="form-label text-white" for="form3Example3cg" style="margin-left: 0px;">Your Email</label>
+                       <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 68.8px;"></div><div class="form-notch-trailing"></div></div></div>
+     
+                       <div data-mdb-input-init="" class="form-outline mb-4" data-mdb-input-initialized="true">
+                         <input type="email" id="form3Example4cg" class="form-control form-control-lg">
+                         <label class="form-label text-white" for="form3Example4cg" style="margin-left: 0px;">DD/MM/YYYY</label>
+                       <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
+     
+                       <div class="form-group col-12">
+                        <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Message"></textarea>
                       </div>
+                          
+                           <!--Radio Buttons Begins-->
+                           <div class="container3 text-center">
+                             <p class="mt-4 text-white">How did you hear about us?</p>
+                             <div class="list">
+                           <div class="form-check form-check-inline ">
+                             <input id="credit" name="paymentMethod" type="radio" class="form-check-input radioButtonColor" checked="" required="">
+                             <label class="form-check-label text-white" for="credit">Instagram</label>
+                           </div>
+                           <div class="form-check form-check-inline ">
+                             <input id="debit" name="paymentMethod" type="radio" class="form-check-input radioButtonColor" required="">
+                             <label class="form-check-label text-white" for="debit">Marketplace</label>
+                           </div>
+                           <div class="form-check form-check-inline">
+                             <input id="paypal" name="paymentMethod" type="radio" class="form-check-input radioButtonColor" required="">
+                             <label class="form-check-label text-white" for="paypal">Friend</label>
+                           </div>
+                         </div>
+                       </div>
+                       </div>
+                       
+                       <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 136px;"></div><div class="form-notch-trailing"></div></div></div>
 
-                      <div class="pt-4 mb-4">
-                        <button data-mdb-button-init="" data-mdb-ripple-init="" class="loginbutton1 btn btn-dark btn-lg btn-block" type="button" data-mdb-button-initialized="true">Submit</button>
-                      </div>
-  
-                      <a class="small text-muted" href="#!">Forgot password?</a>
-                      <p class="mb-5 pb-lg-2" style="color: #39223a;">Don't have an account? <a href="#!" style="color: #39223a;">Register here</a></p>
-                      <a href="#!" class="small text-muted">Terms of use.</a>
-                      <a href="#!" class="small text-muted">Privacy policy</a>
-                    
-  
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-
+                        
+                         <div class="d-flex justify-content-center">
+                           <button type="button" data-mdb-button-init="" data-mdb-ripple-init="" class="submitbut btn btn-success btn-block btn-lg gradient-custom-4 text-body mb-4" data-mdb-button-initialized="true">SUBMIT</button>
+                         </div>
+     
+                   </div>
+                   </div>
+                 </div>
+               </div>
+             </div>  
+             </div>
+           </form>
+     <!--Hero Ends-->
 
 
         </main>
    
        <!-- footer begins -->
-<footer>
-    <div class="footer-top">
+<footer class="visitfooter">
+    <div class="footer-top text-white">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-4">
@@ -144,7 +158,7 @@
         </div>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-bottom text-white">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-auto">

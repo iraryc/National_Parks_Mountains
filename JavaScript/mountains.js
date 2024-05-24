@@ -55,7 +55,7 @@ function setupMountainDropDown() {
             </div>
             
             </div>
-            <a herf="" class="btn btn-brand ms-lg-3 justify-content-end mountainBookButton">Book a Visit</a>
+            <a href="visit.html" class="btn btn-brand ms-lg-3 justify-content-end mountainBookButton">Book a Visit</a>
           </div>
             </div>
         </div>`;
