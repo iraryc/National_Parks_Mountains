@@ -398,13 +398,14 @@ footer{
 
 /* mountain card */
 .cardmountain{
-  border-color:#496571;
+  border-color:#81A3BC;
   display: flex;
   justify-content: center;
   align-items: center;
   border-width: 2px;
   border-radius: 15px;
-}
+  background-color: #81a3bc;
+  }
 
 
 .mountainimage{
@@ -412,13 +413,16 @@ footer{
   width: 400px;
   background-image: cover;
   margin-top: 10px;
-  border-radius: 30px;
   margin-bottom: 15px;
-
+  border-radius: 30px;
+  border-style:double ;
+  border-color:#E0E9F2;
+  border-width: 8px;
 }
 
 .mountainBookButton{
   margin-bottom: 15px;
+  width: 400px;
 }
 
 .card-title{
@@ -427,13 +431,22 @@ footer{
 
 .elevationAndEffort{
   display: inline !important ;
+  padding-left: 7px;
 }
 
 .elevationAndEffort1{
   display: inline !important ;
+  padding-left: 20px;
   
-  margin-right:20px;
-
 }
-/* mountain end */
 
+.searchText{
+  color: #192A34;
+}
+
+
+/* mountain end */
+.img-fluid{
+  background-size: cover;
+  height: cover;
+}

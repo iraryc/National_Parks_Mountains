@@ -42,16 +42,16 @@ function setupMountainDropDown() {
         const mountainCard = document.getElementById("displayMountain");
         mountainCard.innerHTML = 
         `<div class="card mb-3 cardmountain ">
-            <h3 class="card-title" id="cardTitle">${selectedMountain.name}</h3>
+            <h2 class="card-title text-white mt-4" id="cardTitle">${selectedMountain.name}</h2>
             <img src="${selectedMountain.img}" class="card-img-top mountainimage" alt="" id="parkImageDisplay">
             <div class="card-body">
-            <h5 class="card-text" id="cardAddress">Description:</h5>
-            <p class="card-text" id="cardLat&Long">${selectedMountain.desc}</p>
+            <h4 class="card-text text-white" id="cardAddress">Description:</h4>
+            <p class="card-text text-white" id="cardLat&Long">${selectedMountain.desc}</p>
             <div>
-            <h6 class="card-text elevationAndEffort1" id="cardAddress">Elevation:</h6>
-            <p class="card-text elevationAndEffort" id="cardAddress">${selectedMountain.elevation}</p>
-            <h6 class="card-text elevationAndEffort" id="cardAddress">Effort Level:</h6>
-            <p class="card-text elevationAndEffort1" id="cardContact">${selectedMountain.effort}</p>
+            <h5 class="card-text elevationAndEffort1 text-white" id="cardAddress">Elevation:</h5>
+            <p class="card-text elevationAndEffort text-white" id="cardAddress">${selectedMountain.elevation}</p>
+            <h5 class="card-text elevationAndEffort1 text-white" id="cardAddress">Effort Level:</h5>
+            <p class="card-text elevationAndEffort text-white" id="cardContact">${selectedMountain.effort}</p>
             </div>
             
             </div>
